@@ -79,13 +79,3 @@ Author: Sarthak Pote
 
 🙏 Dedicated to Lord Ganesha — the remover of obstacles.
 “Ganpati Bappa Morya! Mangal Murti Morya!”
-
-⭐ Don’t forget to give a star if you like this project!
-
----
-
-Would you like me to **add a short “Live Preview” section** (for when you host it using GitHub Pages)? I can include the exact GitHub Pages link format too.
-
-
-## 🗂️ Project Structure
-
