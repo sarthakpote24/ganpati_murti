@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ganpati Bappa Morya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      background-color: rgb(255, 183, 0);
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 85px;
+    }
+
+    .nav {
+      width: 350px;
+      height: 55px;
+    }
+
+    .nav h1 {
+      font-size: 40px;
+      width: 100%;
+      height: 100%;
+      color: red;
+      text-align: center;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-buttons button {
+      background-color: rgb(255, 68, 0);
+      border: none;
+      border-radius: 20px;
+      padding: 0;
+      cursor: pointer;
+      width: 100px;
+      
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      line-height: 45px;
+      text-align: center;
+    }
+
+    .banner {
+      width: 100%;
+      display: flex;
+    }
+
+    .Bappaimg {
+      width: 60%;
+    }
+
+    .Bappaimg img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .Title {
+      width: 40%;
+      background-color: rgba(255, 166, 0, 0.811);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .Title h1 {
+      font-size: 44px;
+      color: rgb(255, 89, 0);
+      text-align: center;
+    }
+
+    .Title h3 {
+      text-align: center;
+    }
+
+    .Title p {
+      margin-top: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .subtitle {
+      width: 100%;
+      background-color: rgb(255, 200, 0);
+      padding: 20px 0;
+    }
+
+    .sub h1 {
+      font-size: 50px;
+      color: red;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .sub p {
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+    }
+
+    .types {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .types div {
+      width: 18%;
+      text-align: center;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .types img {
+      width: 100%;
+      height: 350px;
+      border-radius: 10px;
+    }
+
+    .parallax {
+      background-image: url(shadu.avif);
+      min-width: 100%;
+      height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .footer {
+      width: 100%;
+      height: 220px;
+      background-color: rgb(255, 183, 0);
+    }
+
+    .social {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      margin-top: 70px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social p {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0px 5px;
+    }
+
+    .social a {
+      text-decoration: none;
+      color: rgb(255, 0, 0);
+    }
+
+    .media {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .facebook,
+    .insta {
+      margin: 0 5px;
+      font-size: 14px;
+    }
+
+    .facebook a {
+      color: #385185;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .insta a {
+      color: #ec3449;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @media (max-width : 768px){
+
+        .navbar {
+            width: 100%;
+            height: 50px;
+            padding: 0px 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo img{
+            width: 100%;
+            height: 50px;
+        }
+
+         .nav{
+            width: 264px;
+            height: 44px;
+            
+        }
+
+        .nav h1{
+            font-size: 25px;
+            padding: 6px;
+        }
+
+        .nav-buttons button {
+            width: 50px;
+        }
+
+        .nav-buttons a{
+            line-height: 24px;
+            font-size: 9px;
+        }
+
+
+        .banner{
+            flex-direction: column;
+            height: 367px;
+        }
+
+        .Bappaimg{
+            width: 100%;
+        }
+
+        .Bappaimg img{
+            width: 100%;
+        }
+
+        .Title{
+            width: 100%;
+            height: 130px;
+        }
+
+        .Title h1{
+           font-size: 29px;
+        }
+        .Title h3{
+            font-size: 15px;
+        }
+
+        .Title p{
+            font-size: 13px;
+        }
+
+        .sub h1{
+            font-size: 30px;
+        }
+
+        .sub p{
+            font-size: 14px;
+        }
+
+        .types{
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .types div{
+            width: 54%;
+            margin: 5px 0px;
+        }
+
+         .types img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .parallax{
+            background-image: url(para3.avif);
+            min-width: 100%;
+            height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .social{
+            text-align: center;
+        }
+
+        .social p{
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .media{
+            text-align: center;
+            margin-top: 52px;
+        }
+
+        .facebook{
+            margin-right: 30px;
+        }
+
+        
+
+        }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="ganesha.png" alt="Ganpati Bappa Logo" />
+    </div>
+
+    <div class="nav">
+      <h1>|| श्री गणेश ||</h1>
+    </div>
+
+    <div class="nav-buttons">
+      <button><a href="AboutUs.html">About Us</a></button>
+      <button><a href="contact.html">Contact</a></button>
+      <a href="https://wa.me/8623806160" target="_blank" style="width: 40px; position: fixed; top: 645px; right: 10px;">
+        <img src="whatsapp.png" alt="wp" style="width: 100%;">
+      </a>
+    </div>
+  </div>
+
+  <div class="banner">
+    <div class="Bappaimg">
+      <img src="ganesh.jpg" alt="Ganpati Bappa" />
+    </div>
+    <div class="Title">
+      <h1>|| गणपती बाप्पा मोरया ||</h1>
+      <h3>|| गणेश चतुर्थी निमित्त सर्वांना हार्दिक शुभेच्छा ||</h3>
+      <p>इथे सर्व प्रकारच्या गणेशमूर्ती मिळतील. आपल्या आवडीनुसार मूर्ती सजवून मिळतील.</p>
+    </div>
+  </div>
+
+  <div class="subtitle">
+    <div class="sub">
+      <h1>|| सुखकर्ता दुःखहर्ता ||</h1>
+      <p>आमच्याकडे विविध प्रकारच्या मूर्ती आहेत.</p>
+      <p>खाली दिलेल्या प्रकारच्या मूर्ती देखील मिळतात. आजच आमच्या दुकानात भेट द्या आणि आपले आवडते बाप्पा घरी घेऊन जा.</p>
+    </div>
+
+    <div class="types">
+      <div class="img1">
+        <img src="Ekadanta_1.webp" alt="Shadu Maati Ganpati" />
+        <p>|| शाडू माटिचा बाप्पा ||</p>
+        <p>2001/- ते 4001/-</p>
+      </div>
+      <div class="img2">
+        <img src="og2.jpg" alt="Bal Ganesh" />
+        <p>|| बाल गणेश ||</p>
+        <p>851/- ते 1551/-</p>
+      </div>
+      <div class="img3">
+        <img src="og5.jpg" alt="Bajirao Mastani" />
+        <p>|| बाजीराव मस्तानी ||</p>
+        <p>1200/- ते 3551/-</p>
+      </div>
+      <div class="img4">
+        <img src="og4.jpg" alt="Lalbaugcha Raja" />
+        <p>|| लालबागचा राजा ||</p>
+        <p>1551/- ते 5001/-</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax"></div>
+
+      <div class="footer">
+        <div class="social">
+                <p>Mobile No: <a href="#">8149689380</a></p>
+                <p>Email ID: <a href="#">sarthakpote24@gmail.com</a></p>
+        </div>
+
+        <div class="media">
+            <div class="facebook">
+                <a href="#"><img src="facebook.png" alt="facebook" style="width: 16px;">Facebook</a>
+                
+            </div>
+
+            <div class="insta">
+                <a href="#"><img src="instagram.png" alt="insta" style="width: 16px;">Instagram</a>
+                
+            </div>
+        </div>
+    </div>
+
+      <div style="text-align: center;">
+    <button id="audioToggleBtn" style="
+        background-color: #ffb700;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        color: black;
+        position: fixed;
+        bottom:115px;
+        right: 0px;
+    ">🔊</button>
+</div>
+
+<audio id="aartiAudio" loop>
+    <source src="The Bappa Song - Full Video  Memory Card  Shankar Mahadevan  Punyakar Upadhyay.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audio = document.getElementById("aartiAudio");
+    const btn = document.getElementById("audioToggleBtn");
+
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+        if (!isPlaying) {
+            audio.play();
+            btn.textContent = "⏸️ Pause";
+            isPlaying = true;
+        } else {
+            audio.pause();
+            btn.textContent = "🔊 Play";
+            isPlaying = false;
+        }
+    });
+</script>
+</body>
+</html> 

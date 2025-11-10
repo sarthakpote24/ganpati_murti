@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Shri Ganesh Murti Shop in Nashik. Reach us for custom Ganpati idol orders and location details." />
+    <title>Contact | Shri Ganesh Murti Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            background-color: rgb(255, 183, 0);
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 85px;
+        }
+
+        .nav {
+            width: 350px;
+            height: 55px;
+        }
+
+        .nav h1 {
+            font-size: 40px;
+            width: 100%;
+            height: 100%;
+            color: red;
+            text-align: center;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-buttons button {
+            background-color: rgb(255, 68, 0);
+            border: none;
+            border-radius: 20px;
+            padding: 0;
+            cursor: pointer;
+            width: 100px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        .page {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: rgba(255, 166, 0, 0.811);
+        }
+
+        .phone, .box {
+            flex: 300px;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        .phone h1 {
+            font-size: 28px;
+            color: rgb(0, 0, 0);
+        }
+
+        .phone p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .line {
+            width: 80%;
+            height: 2px;
+            background-color: black;
+            margin: 30px 0;
+        }
+
+        .location, .call {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .locimg img, .callimg img {
+            width: 40px;
+            margin-right: 15px;
+        }
+
+        .locinfo h3, .callinfo h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .callinfo a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .box {
+            background-color: rgb(216, 101, 19);
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .headline h2 {
+            font-size: 22px;
+            color: rgb(255, 187, 0);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: rgb(255, 187, 0);
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(196, 144, 2);
+        }
+
+        .footer {
+            width: 100%;
+            height: 170px;
+            background-color: rgb(243, 136, 59);
+            padding: 50px;
+        }
+
+        .social {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social p {
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0px 5px;
+        }
+
+        .social a {
+            text-decoration: none;
+            color: rgb(255, 0, 0);
+        }
+
+        .media {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .facebook, .insta {
+            margin: 8px 0;
+            font-size: 14px;
+            margin: 0px 5px;
+        }
+
+        .facebook a {
+            color: #385185;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .insta a {
+            color: #ec3449;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media(max-width: 768px) {
+            .navbar {
+                height: 50px;
+                padding: 0px 20px;
+            }
+
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            .logo img {
+                height: 50px;
+            }
+
+            .nav {
+                width: 264px;
+                height: 44px;
+            }
+
+            .nav h1 {
+                font-size: 25px;
+                padding: 6px;
+            }
+
+            .nav-buttons button {
+                width: 50px;
+            }
+
+            .nav-buttons a {
+                line-height: 24px;
+                font-size: 8px;
+            }
+
+            .phone, .box {
+                padding: 10px;
+            }
+
+            .social p {
+                font-size: 8px;
+            }
+
+            .facebook, .insta {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="ganesha.png" alt="Ganpati Bappa logo" />
+        </div>
+
+        <div class="nav">
+            <h1>|| श्री गणेश ||</h1>
+        </div>
+
+        <div class="nav-buttons">
+            <button><a href="AboutUs.html">About Us</a></button>
+            <button><a href="index.html">Home</a></button>
+            <a href="" style="width: 40px; position: fixed; top: 645px; right: 10px;"><img src="whatsapp.png" alt="wp" style="width: 100%;"></a>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="phone">
+            <h1>Contact Us</h1>
+            <p>Use our contact form for inquiries or reach out using the contact information below.</p>
+            <p>Feel free to get in touch with us via email or phone.</p>
+
+            <div class="line"></div>
+
+            <div class="location">
+                <div class="locimg">
+                    <img src="placeholder (1).png" alt="Map Location" />
+                </div>
+                <div class="locinfo">
+                    <h3>Our Shop Location</h3>
+                    <p>Murlidhar Nagar, Pathardi Phata, Nashik</p>
+                </div>
+            </div>
+
+            <div class="call">
+                <div class="callimg">
+                    <img src="call (1).png" alt="Phone Icon" />
+                </div>
+                <div class="callinfo">
+                    <h3>Phone</h3>
+                    <a href="tel:+918149689380">+91 814 968 9380</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="headline">
+                <h2>|| गणपती बाप्पा मोरया ||</h2>
+            </div>
+
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Your Number" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Which type of murti you want" required></textarea>
+
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="social">
+            <p>Mobile No: <a href="#">8149689380</a></p>
+            <p>Email ID: <a href="#">sarthakpote24@gmail.com</a></p>
+        </div>
+
+        <div class="media">
+            <div class="facebook">
+                <a href="#"><img src="facebook.png" alt="facebook" style="width: 16px;">Facebook</a>
+            </div>
+            <div class="insta">
+                <a href="#"><img src="instagram.png" alt="insta" style="width: 16px;">Instagram</a>
+            </div>
+        </div>
+    </div>
+
+<div style="text-align: center;">
+    <button id="audioToggleBtn" style="
+        background-color: rgb(243, 136, 59);
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        color: black;
+        position: fixed;
+        bottom: 115px;
+        right: 0px;
+    ">🔊</button>
+</div>
+
+<audio id="aartiAudio" loop>
+    <source src="The Bappa Song - Full Video  Memory Card  Shankar Mahadevan  Punyakar Upadhyay.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audio = document.getElementById("aartiAudio");
+    const btn = document.getElementById("audioToggleBtn");
+
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+        if (!isPlaying) {
+            audio.play();
+            btn.textContent = "⏸️ Pause";
+            isPlaying = true;
+        } else {
+            audio.pause();
+            btn.textContent = "🔊 Play";
+            isPlaying = false;
+        }
+    });
+</script>
+
+</body>
+</html>

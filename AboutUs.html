@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #fff8e1;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+    }
+
+    .navbar {
+      height: 100px;
+      background-color: #ffb700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .logo img {
+      width: 100%;
+    }
+
+    .navbar h1 {
+      font-size: 36px;
+      color: red;
+      text-align: center;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-buttons button {
+      background-color: #ff4400;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .AboutUs {
+      padding: 60px 40px;
+    }
+
+    .AboutUs h2 {
+      color: #ff0000;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .AboutUs p {
+      font-size: 22px;
+      line-height: 1.8;
+      color: #ff7300;
+    }
+
+    .parallax {
+      background-image: url('ganesh-chaturthri.avif');
+      min-width: 100%;
+      height: 600px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .footer{
+      width: 100%;
+      height: 170px;
+      background-color: rgb(243, 136, 59);
+      padding: 50px;
+    }
+
+    .social{
+           width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+        }
+
+        .social p{
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0px 5px;
+        }
+
+        .social a{
+            text-decoration: none;
+            color: rgb(255, 0, 0);
+        }
+
+        .media{
+            width: 100%;
+            display: flex;
+            justify-content: center;align-items: center;
+        }
+
+        .facebook , 
+        .insta{
+            margin: 8px 0;
+            font-size: 14px;
+            margin: 0px 5px;
+        }
+
+        .facebook a{
+            color: #385185;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+.insta a{
+            color: #ec3449;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 78px;
+    padding: 0 20px;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .logo{
+    width: 55px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .nav-buttons button {
+    padding: 6px 10px;
+    border-radius: 14px;
+  }
+
+  .nav-buttons a {
+    font-size: 12px;
+  }
+
+  .AboutUs {
+    padding: 30px 16px;
+  }
+
+  .AboutUs h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .AboutUs p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .footer {
+    padding: 30px 16px;
+  }
+
+  .social p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .facebook a,
+  .insta a {
+    font-size: 12px;
+  }
+
+  .parallax {
+    background-image: url(ganp.jpg); 
+    height: 650px;
+  }
+
+  .AboutUs p{
+    color: black;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="ganesha.png" alt="Ganpati Bappa Logo" />
+    </div>
+    <h1>|| श्री गणेश ||</h1>
+    <div class="nav-buttons">
+      <button><a href="index.html.html">Home</a></button>
+      <button><a href="contact.html">Contact</a></button>
+      <a href="" style="width: 40px; position: fixed; top: 645px; right: 10px;"><img src="whatsapp.png" alt="wp" style="width: 100%;"></a>
+    </div>
+  </div>
+
+  <div class="parallax">
+    <div class="AboutUs">
+    <h2>About Us</h2>
+    <p>
+      Welcome to our Ganesh Murti Art Studio! We are a passionate team of artisans and devotees dedicated to bringing the divine presence of Lord Ganesha into your home. Each idol is handcrafted with love, precision, and traditional values passed down through generations.
+    </p>
+    <p>
+      Our mission is to promote eco-friendly celebrations by creating biodegradable Ganesh idols that radiate devotion and craftsmanship. Whether you seek a traditional Chintamani or a majestic Lalbaugcha Raja, we offer unique designs that capture the essence of Ganesh Chaturthi.
+    </p>
+    <p>
+      Thank you for being a part of our journey and allowing us to contribute to your festival of joy, unity, and spiritual devotion.
+    </p>
+   </div>
+  </div>
+
+  <div class="footer">
+    <div class="social">
+      <p>Mobile No: <a href="#">8149689380</a></p>
+      <p>Email ID: <a href="#">sarthakpote24@gmail.com</a></p>
+    </div>
+
+    <div class="media">
+      <div class="facebook">
+        <a href="#"><img src="facebook.png" alt="facebook" style="width: 16px;">Facebook</a>
+                
+        </div>
+
+        <div class="insta">
+        <a href="#"><img src="instagram.png" alt="insta" style="width: 16px;">Instagram</a>
+                
+        </div>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <button id="audioToggleBtn" style="
+        background-color:rgb(243, 136, 59);
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        color: black;
+        position: fixed;
+        bottom:115px;
+        right: 0px;
+    ">🔊</button>
+</div>
+
+<audio id="aartiAudio" loop>
+    <source src="The Bappa Song - Full Video  Memory Card  Shankar Mahadevan  Punyakar Upadhyay.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audio = document.getElementById("aartiAudio");
+    const btn = document.getElementById("audioToggleBtn");
+
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+        if (!isPlaying) {
+            audio.play();
+            btn.textContent = "⏸️ Pause";
+            isPlaying = true;
+        } else {
+            audio.pause();
+            btn.textContent = "🔊 Play";
+            isPlaying = false;
+        }
+    });
+</script>
+
+</body>
+</html>
